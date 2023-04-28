@@ -5,7 +5,7 @@ const controls: Controls[] = [
         keys: [
             {
                 name: 'Jump',
-                key: '↑'
+                key: 'Space'
             }
         ]
     },

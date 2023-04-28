@@ -21,7 +21,7 @@ export default function HomePage() {
           isLoaded={isLoaded}
           unityProvider={unityProvider}
           requestFullscreen={requestFullscreen}
-          headerText={"Disco Floor"}
+          headerText={"Skate-Bored"}
           subHeaderText={"Tron-like 3D multiplayer game"}
           controls={controls}
       />
