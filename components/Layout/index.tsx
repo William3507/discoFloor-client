@@ -4,6 +4,8 @@ import { Box, Container } from '@chakra-ui/react'
 
 import Navbar, { navbarHeight } from '../Navbar';
 
+import {background} from "@/data/colors";
+
 interface Props {
     children: React.ReactNode
 }
@@ -14,7 +16,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <Box
             minHeight='100vh'
             minWidth='100vw'
-            bg='#1A202C'
+            bg={background}
         >
             <Navbar />
             <Container

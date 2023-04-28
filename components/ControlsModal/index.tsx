@@ -29,14 +29,11 @@ const Controls: React.FC<Props> = ({ isOpen, onClose, controls }) => {
           isCentered
       >
           <ModalOverlay />
-          <ModalContent
-              bg='#1A202C'
-          >
+          <ModalContent>
               <ModalHeader>
                   <Heading
                       fontSize="lg"
                       fontWeight="bold"
-                      color='blue.200'
                       textAlign='center'
                   >
                       Controls

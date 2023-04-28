@@ -9,6 +9,7 @@ import GetStarted from "@/components/Game/GetStarted";
 import ControlsModal from "@/components/ControlsModal";
 
 import {Controls} from "@/types/Controls";
+import {accent} from "@/data/colors";
 
 interface Props {
     unityProvider: UnityProvider,
@@ -38,7 +39,7 @@ const Game: React.FC<Props> = ({ unityProvider, isLoaded, requestFullscreen, con
                 <Card
                     shadow='lg'
                     position='relative'
-                    borderColor='blue.200'
+                    borderColor={accent}
                     borderWidth={2}
                     bg='transparent'
                     overflow='hidden'
@@ -50,7 +51,7 @@ const Game: React.FC<Props> = ({ unityProvider, isLoaded, requestFullscreen, con
                                 isIndeterminate
                                 size='80px'
                                 trackColor='transparent'
-                                color='blue.200'
+                                color={accent}
                                 position='absolute'
                                 left='50%'
                                 top='50%'
@@ -63,8 +64,6 @@ const Game: React.FC<Props> = ({ unityProvider, isLoaded, requestFullscreen, con
                         style={{
                             width: '100%',
                             aspectRatio: '16/9'
-                            // width: 0,
-                            // height: 0,
                         }}
                     />
                 </Card>

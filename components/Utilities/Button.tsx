@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Button as ChakraButton, ButtonProps} from "@chakra-ui/react";
+import {accent, accentHover, background} from "@/data/colors";
 
 type ButtonType = 'primary' | 'outline' | 'ghost';
 
@@ -10,23 +11,23 @@ type ButtonStyles = {
 
 const buttonStyles: ButtonStyles = {
     primary: {
-        color: '#1A202C',
-        bg: 'blue.200',
+        color: background,
+        bg: accent,
         _hover: {
-            bg: 'blue.300'
+            bg: accentHover
         }
     },
     outline: {
         variant: 'outline',
-        color: 'blue.200',
-        borderColor: 'blue.200',
+        color: accent,
+        borderColor: accent,
         _hover: {
             bg: 'whiteAlpha.50'
         }
     },
     ghost: {
         variant: 'ghost',
-        color: 'blue.200',
+        color: accent,
         _hover: {
             bg: 'whiteAlpha.50'
         }

@@ -21,8 +21,8 @@ export default function HomePage() {
           isLoaded={isLoaded}
           unityProvider={unityProvider}
           requestFullscreen={requestFullscreen}
-          headerText={"Aptos Arena"}
-          subHeaderText={"2D platform fighter game"}
+          headerText={"Disco Floor"}
+          subHeaderText={"Tron-like 3D multiplayer game"}
           controls={controls}
       />
   )

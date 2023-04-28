@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {HStack, Text} from "@chakra-ui/react";
 
 import Button from "@/components/Utilities/Button";
+import {accent} from "@/data/colors";
 
 interface Props {
     label: string,
@@ -25,7 +26,7 @@ const GetStartedStep: React.FC<Props> = ({ label, onClick, icon, index }) => {
             spacing={4}
         >
             <Text
-                color={clicked ? 'gray.400' : 'blue.200'}
+                color={clicked ? 'gray.400' : accent}
                 fontSize='lg'
             >
                 {index + 1}

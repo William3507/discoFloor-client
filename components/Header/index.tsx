@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Heading, VStack, Text } from '@chakra-ui/react'
+import {accent} from "@/data/colors";
 
 interface Props {
     headerText: string,
@@ -15,7 +16,7 @@ const Header: React.FC<Props> = ({ headerText, subHeaderText }) => {
         <Heading
             fontSize="4xl"
             fontWeight="bold"
-            color='blue.200'
+            color={accent}
         >
             {headerText}
         </Heading>

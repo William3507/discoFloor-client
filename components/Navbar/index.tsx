@@ -2,8 +2,6 @@ import React from 'react';
 
 import {
     Flex,
-    HStack,
-    Text,
 } from '@chakra-ui/react'
 
 export const navbarHeight = 20;
@@ -21,19 +19,7 @@ const Navbar : React.FC = () => {
             gap={8}
             alignItems='center'
             p={4}
-        >
-            <HStack
-                flex={1}
-                justifyContent='space-between'
-            >
-                <Text
-                    fontSize='2xl'
-                    fontWeight='bold'
-                >
-                    Disco Floor
-                </Text>
-            </HStack>
-        </Flex>
+        />
     );
 };
 

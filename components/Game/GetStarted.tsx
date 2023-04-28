@@ -6,6 +6,7 @@ import {GiRetroController} from "react-icons/gi";
 import {AiOutlineFullscreen} from "react-icons/ai";
 
 import GetStartedStep from "@/components/Game/GetStartedStep";
+import {accent} from "@/data/colors";
 
 interface Props {
     requestFullscreen: (fullscreen: boolean) => void,
@@ -35,7 +36,7 @@ const GetStarted: React.FC<Props> = ({ requestFullscreen, onOpen }) => {
         >
             <Text
                 fontSize='xl'
-                color='blue.200'
+                color={accent}
             >
                 Get Started
             </Text>
